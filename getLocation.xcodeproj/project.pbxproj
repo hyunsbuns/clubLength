@@ -13,6 +13,7 @@
 		A4AD3F7E1AE7601000B4C4FD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4AD3F7D1AE7601000B4C4FD /* Images.xcassets */; };
 		A4AD3F811AE7601000B4C4FD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4AD3F7F1AE7601000B4C4FD /* LaunchScreen.xib */; };
 		A4AD3F8D1AE7601000B4C4FD /* getLocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AD3F8C1AE7601000B4C4FD /* getLocationTests.swift */; };
+		A4AD3F971AE7606200B4C4FD /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4AD3F961AE7606200B4C4FD /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		A4AD3F861AE7601000B4C4FD /* getLocationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = getLocationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4AD3F8B1AE7601000B4C4FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4AD3F8C1AE7601000B4C4FD /* getLocationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getLocationTests.swift; sourceTree = "<group>"; };
+		A4AD3F961AE7606200B4C4FD /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4AD3F971AE7606200B4C4FD /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +62,7 @@
 		A4AD3F681AE7601000B4C4FD = {
 			isa = PBXGroup;
 			children = (
+				A4AD3F961AE7606200B4C4FD /* CoreLocation.framework */,
 				A4AD3F731AE7601000B4C4FD /* getLocation */,
 				A4AD3F891AE7601000B4C4FD /* getLocationTests */,
 				A4AD3F721AE7601000B4C4FD /* Products */,
@@ -161,6 +165,7 @@
 				TargetAttributes = {
 					A4AD3F701AE7601000B4C4FD = {
 						CreatedOnToolsVersion = 6.3;
+						DevelopmentTeam = 4X76CP793V;
 					};
 					A4AD3F851AE7601000B4C4FD = {
 						CreatedOnToolsVersion = 6.3;
@@ -340,9 +345,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = getLocation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -350,9 +358,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = getLocation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
